@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mousemove Parallax Effects</title>
+</head>
+<body>
+<section>
+    <div id="bg"></div>
+    <h2>WELCOME</h2>
+    <img src="img/29712-9-airplane-photos.png" class="plane">
+    <img src="img/26315-7-airplane-transparent.png" class="plane2">
+</section>
+
+
+
+
+<script type="text/javascript">
+    var position = document.documentElement;
+    position.addEventListener("mousemove", e =>{
+        position.style.setProperty('--x',e.clientX + "px");
+    })
+
+</script>
+</body>
+</html>
